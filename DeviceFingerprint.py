@@ -6,7 +6,8 @@ def Get_dfghfgdh6(Key:str="",Version_Code="056"):
         "056": "f3f74eccbcad8c533ce1c94928588ff442ad67d64dedbeb82b",
         "057": "31a43c26cdcedd2c44c4952778a99a8312167a44f3f74566c5",
         "060": "a9f34c26cd024e97603938441addc2dcb9bbf766bc74595277",
-        "061": "182be88b839c4b0c3585b43be6dd1fcedd2bc745f3f74cf063"
+        "061": "182be88b839c4b0c3585b43be6dd1fcedd2bc745f3f74cf063",
+        "062": "f3f741c87c9c46a2eda58cbfa59ca8376d6e8eb73ffde33ce1"
     }
     if Version_Code=="058":
         return "de2630000028dc681427c44c4630b30bad588103e2d91659e4".replace("0bad5",Gen_AlgoPoint(Key))
@@ -240,7 +241,7 @@ def GenDeviceFingerprint(key,Origin,Config_Timestamp,version,Version_Code):
     "lk4n6ll": "Android",
     "zvcxv234": "14",
     "fdsaf4415": 0.07,
-    "hgdfhgf437": False,
+    "hgdfhgf437": True,
     "fghjghs": "zh-CN",
     "fghjfghe": "Asia/Shanghai",
     "ifghjgfhjp": "123.152.213.20",
@@ -254,7 +255,7 @@ def GenDeviceFingerprint(key,Origin,Config_Timestamp,version,Version_Code):
     "jghfjfhg453": True,
     "dfsgdf87": True,
     "dfghfgdh6": Get_dfghfgdh6(Key=key,Version_Code=Version_Code),
-    "gfdhfg67": Origin+"/",
+    "gfdhfg67": "https://fnyx.feiniu.com/misc/captcha/login-v2.shtml",
     "sdfgd435": "",
     "fghjhg763": "799*400",
     "ghjkghj5678": "800*400",
