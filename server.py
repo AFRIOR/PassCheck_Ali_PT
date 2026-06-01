@@ -18,6 +18,6 @@ def PassCheck():
         return jsonify({"code":200,"Msg":"PassCheck success","captchaVerifyParam":res})
     else:
         return jsonify({"code": 400, "Msg": "PassCheck Fail"})
-
-app.run(host="0.0.0.0",port=5000,debug=True)
+if __name__=="__main__":
+    app.run(host="0.0.0.0",port=5000,debug=True)
 
