@@ -7,7 +7,8 @@ def Get_dfghfgdh6(Key:str="",Version_Code="056"):
         "057": "31a43c26cdcedd2c44c4952778a99a8312167a44f3f74566c5",
         "060": "a9f34c26cd024e97603938441addc2dcb9bbf766bc74595277",
         "061": "182be88b839c4b0c3585b43be6dd1fcedd2bc745f3f74cf063",
-        "062": "f3f741c87c9c46a2eda58cbfa59ca8376d6e8eb73ffde33ce1"
+        "062": "f3f741c87c9c46a2eda58cbfa59ca8376d6e8eb73ffde33ce1",
+        "063": "c368000384822349c46afc92c97a634abc7df6bf90e64dcb9b",
     }
     if Version_Code=="058":
         return "de2630000028dc681427c44c4630b30bad588103e2d91659e4".replace("0bad5",Gen_AlgoPoint(Key))
