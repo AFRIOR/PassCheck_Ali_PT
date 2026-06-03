@@ -47,7 +47,6 @@ def PassCaptcha(SID,Origin,UA):
     print(f"当前Feilin版本:{version_code}")
     if version_code not in ["053","054","055","056","057","058","059","060","061","062","063"]:return False
     t=int(Params["timestamp"])
-    time.sleep(5)
     res2,GatherCost,timestamp1,timestamp2=UploadLog2(AES_Key=Params["key"],SessionId=Params["sessionId"],Origin=Origin,UA=UA,version=version,Version_Code=version_code,Config_Time=t)
     # res3 = UploadLog3(AES_Key=Params["key"], SessionId=Params["sessionId"], Origin=Origin, UA=UA)
     CertifyId = res_json["CertifyId"]
