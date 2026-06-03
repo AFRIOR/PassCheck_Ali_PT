@@ -198,6 +198,31 @@ def Gen_Key11(input_str):
         nf += 32
         str2 += chr(nf)
     return base64.b64encode(str2.encode()).decode()
+def Gen_Key12(input_str):
+    key1="ecfa6ec1"
+    str1=""
+    str2=""
+    key2="9e5923e0"
+    for i,char1 in enumerate(input_str):
+        a=ord(char1)
+        b=ord(key1[i])
+        c=b-32
+        d=a+c
+        e=int((69 * d - 2208) / 69)
+        f=e%95
+        f += 32
+        str1+=chr(f)
+    for i,char2 in enumerate(str1):
+        a = ord(char2)
+        b = ord(key2[i])
+        c = b - 32
+        d = a + c
+        e = -67 * d +2144
+        f=-int(e/67)
+        g = f % 95
+        g += 32
+        str2 += chr(g)
+    return base64.b64encode(str2.encode()).decode()
 
 def Gen_Key(input_str,version):
     if version == "053":
@@ -222,3 +247,5 @@ def Gen_Key(input_str,version):
         return Gen_Key10(input_str)
     elif version == "063":
         return Gen_Key11(input_str)
+    elif version == "064":
+        return Gen_Key12(input_str)
