@@ -10,6 +10,7 @@ def Get_dfghfgdh6(Key:str="",Version_Code="056"):
         "062": "f3f741c87c9c46a2eda58cbfa59ca8376d6e8eb73ffde33ce1",
         "063": "c368000384822349c46afc92c97a634abc7df6bf90e64dcb9b",
         "064": "ae1b56751886092de4599eb45bca67c6b5bb5f2ee9d93b43be",
+        "065": "fc92c384419eb45fb5a839aa9b0221e0c3fdcb9bbf76665f9d"
     }
     if Version_Code=="058":
         return "de2630000028dc681427c44c4630b30bad588103e2d91659e4".replace("0bad5",Gen_AlgoPoint(Key))
@@ -18,8 +19,8 @@ def Get_dfghfgdh6(Key:str="",Version_Code="056"):
     else:return dfghfgdh6_List[Version_Code]
 def GenDeviceFingerprint(key,Origin,Config_Timestamp,version,Version_Code):
     timestamp = int(time.time()*1000)
-    time.sleep(2+random.random())
-    timestamp2=int(time.time()*1000)
+    # time.sleep(2+random.random())
+    timestamp2=int(time.time()*1000)+2000+100*random.random()
 #     MockFingerprint_JSON={
 #     "dghfh565": "W.10051",
 #     "asdfasdf": 1.5,
