@@ -1,8 +1,6 @@
 import random
 import time
 
-from PIL.features import version_codec
-
 from GenCheckParam import *
 def FindIpbyVersion(Version_Code):
     if Version_Code=="069":return "111.1.156.204"
