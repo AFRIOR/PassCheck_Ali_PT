@@ -1,6 +1,13 @@
 import random
 import time
+
+from PIL.features import version_codec
+
 from GenCheckParam import *
+def FindIpbyVersion(Version_Code):
+    if Version_Code=="069":return "111.1.156.204"
+    if Version_Code=="084":return "123.152.213.19"
+    else:return "123.152.213.20"
 def Get_dfghfgdh6(Key:str="",Version_Code="056"):
     dfghfgdh6_List = {
         "056": "f3f74eccbcad8c533ce1c94928588ff442ad67d64dedbeb82b",
@@ -12,6 +19,7 @@ def Get_dfghfgdh6(Key:str="",Version_Code="056"):
         "064": "ae1b56751886092de4599eb45bca67c6b5bb5f2ee9d93b43be",
         "065": "fc92c384419eb45fb5a839aa9b0221e0c3fdcb9bbf76665f9d",
         "066": "8024ab40d9f3f749eb45b000890e6497a634dedb9a888bf766",
+        "084": "f257396d8a4abc75dd0fb02214abc7c6b5b12202debe5545d7"
     }
     if Version_Code=="058":
         return "de2630000028dc681427c44c4630b30bad588103e2d91659e4".replace("0bad5",Gen_AlgoPoint(Key))
@@ -248,7 +256,7 @@ def GenDeviceFingerprint(key,Origin,Config_Timestamp,version,Version_Code):
     "hgdfhgf437": True,
     "fghjghs": "zh-CN",
     "fghjfghe": "Asia/Shanghai",
-    "ifghjgfhjp": "123.152.213.20",
+    "ifghjgfhjp": FindIpbyVersion(Version_Code=Version_Code),
     "nghjdfgsh": "10-0|11-58|20-62|23-245|30-248|40-265|41-3259|70-3261",
     "csdfgdfd": True,
     "tyjhtyge": True,

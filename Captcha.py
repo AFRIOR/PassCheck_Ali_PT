@@ -45,7 +45,7 @@ def PassCaptcha(SID,Origin,UA):
         version_code=re.match(r".*?/feilin([0-9]+)",version).group(1)
         res_json =InitCaptcha(Origin, UA,SID)
     print(f"当前Feilin版本:{version_code}")
-    if version_code not in ["053","054","055","056","057","058","059","060","061","062","063","064","065","066"]:return False
+    if version_code not in ["053","054","055","056","057","058","059","060","061","062","063","064","065","066","069","084"]:return False
     t=int(Params["timestamp"])
     res2,GatherCost,timestamp1,timestamp2=UploadLog2(AES_Key=Params["key"],SessionId=Params["sessionId"],Origin=Origin,UA=UA,version=version,Version_Code=version_code,Config_Time=t)
     # res3 = UploadLog3(AES_Key=Params["key"], SessionId=Params["sessionId"], Origin=Origin, UA=UA)
